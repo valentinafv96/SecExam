@@ -45,6 +45,6 @@ def read_item(id: str = ""):
     #   db=json.load(json_file)
 
     if not id:
-    	return db
+        return db
     else:
-    	return new_db
+        return new_db
