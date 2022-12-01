@@ -37,7 +37,7 @@ def read_item(id: str = ""):
     #Real time JSON file
     r=requests.get(file)
     db=r.json()
-    new_db=[ d for d in db if d.get('id')==id  ]
+    new_db=[ d for d in db if str(d.get('id'))==id  ]
     f=open('data/filtered.json','w')
     json.dump(new_db,f)
     f.close()
