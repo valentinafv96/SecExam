@@ -32,7 +32,7 @@ def read_item(id: str = ""):
     
     For example: 
     
-    USAGE: http://127.0.0.1:8000/?id=https://openalex.org/W1775749144
+    USAGE: http://127.0.0.1:8000/?id=https://openalex.org/W4289443651
     '''
     #Real time JSON file
     r=requests.get(file)

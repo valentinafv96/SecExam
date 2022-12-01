@@ -1,6 +1,6 @@
 "use strict";
 //See: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
-//get user input from url: http://127.0.0.1:8001/?id=https://openalex.org/W1775749144
+//get user input from url: http://127.0.0.1:8001/?id=https://openalex.org/W4289443651
 var url_string = window.location.href
 var url = new URL(url_string);
 var id = url.searchParams.get("id");
@@ -56,7 +56,7 @@ function jsonList(item) {
   const div = document.createElement("div");
   // get the required details from the local.json file to the div element using innerHTML
   div.innerHTML = `
-        ${item.id} is called: ${item.title} and was published on ${item.publication_date}`;
+        Paper with id: ${item.id} is called: ${item.title} and was published on ${item.publication_date} from ${APIurl}`;
   // attach the newly created div element to the original div element, in this case to the class '.output'
   output.append(div);
   // Add styling to the displayed content
